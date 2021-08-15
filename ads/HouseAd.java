@@ -6,8 +6,9 @@ public class HouseAd extends Ad {
     double square;
     int floors;
 
-    public HouseAd(long id, int price, String address, double square, int floors) {
+    public HouseAd(long id, int price,String ownerName,String address, double square, int floors) {
         super(id, price);
+        this.ownerName=ownerName;
         this.address = address;
         this.square = square;
         this.floors = floors;
