@@ -11,18 +11,20 @@ public class UserRepository {
 
     public String[] getUserName() {
         String[] userName = new String[ getSizeOfTheArray(user) ];
+        int index = 0;
         for (int i = 0; i < userName.length; i++) {
             if (user[ i ] != null)
-                userName[ i ] = user[ i ].getName();
+                userName[ index ] = user[ i ].getName();
         }
         return userName;
     }
 
     public long[] getUserIds() {
         long[] userId = new long[ getSizeOfTheArray(user) ];
+        int index = 0;
         for (int i = 0; i < userId.length; i++) {
             if ((user[ i ] != null))
-                userId[ i ] = user[ i ].getId();
+                userId[ index ] = user[ i ].getId();
         }
         return userId;
     }
